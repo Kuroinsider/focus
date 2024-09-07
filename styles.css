@@ -1,0 +1,213 @@
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Figtree', sans-serif;
+    background-color: #161A1D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    width: auto;
+    margin-bottom: 30%;
+}
+
+.tooltip {
+    position: absolute;
+    top: 100%;
+    display: none;
+    background-color: #000;
+    color: #C3CCD7;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-family: inherit;
+}
+
+.settings-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    color: #8393A4;
+    font-size: 24px;
+    margin: 10px 5px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-btn:hover{
+    background-color: #22272B;
+    cursor: pointer;
+    
+}
+
+.settings-btn:hover .tooltip {
+    display: block;
+}
+
+.logo {
+    width: 160px; /* Prevent cropping */
+    height: auto; /* Adjust height to fit */
+    margin-bottom: 20px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo:hover .tooltip {
+    display: block;
+}
+
+.search {
+    position: relative;
+    width: 500px;
+    height: 50px;
+    background-color: #22272B;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input {
+    width: 100%;
+    height: auto;
+    padding: 5px 5px 5px 0px; /* Adjust padding inside the search bar */
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+    outline: none; /* Remove blue border on focus */
+    background-color: transparent;
+    color: white;
+}
+
+.search input::placeholder{
+    color: #8393A4;
+    opacity: 100%;
+}
+
+.custom-btn {
+    border: none;
+    background: #579DFF;
+    margin: 10px 5px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-btn:hover {
+    background-color: #2961B0;
+    cursor: pointer;
+}
+
+.custom-btn:hover .tooltip {
+    display: block;
+}
+
+.custom-icon {
+    font-size: 24px;
+    color: #22272B;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-btn1 {
+    border: none;
+    background: transparent;
+    margin: 5px 0px 5px 5px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-icon1 {
+    font-size: 20px;
+    color: #8393A4;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options {
+    width: auto;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options button {
+    border: none;
+    background: #22272B;
+    color: white;
+    font-size: 24px;
+    margin: 10px 5px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options button:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+.options button:hover .tooltip {
+    display: block;
+}
+
+.options button.selected {
+    background-color: #8393A4;
+}
+
+.options-btn-icon {
+    color: #8393A4;
+}
+
+.options button.selected .options-btn-icon {
+  color: #161A1D;
+}
+.spinning {
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

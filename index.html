@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Focus Search</title>
+</head>
+<body>
+    <button class="settings-btn"><i class="fas fa-cog"></i><span class="tooltip">Coming Soon 🚧</span></button>
+    <div class="container">     
+        <img src="img/logo-dark.png" alt="Focus Logo" class="logo" onclick="window.location.href='file:///Users/Achi/Desktop/Websites/focus%20search/index.html'">
+        <div class="search">
+            <button class="custom-btn1"><i class="fa fa-search custom-icon1"></i></button>
+            <input type="text" placeholder="What are you looking for?" id="searchInput">
+            <button id="searchBtn" class="custom-btn"><i class="fas fa-compass custom-icon"></i><span class="tooltip">Search</span></button>
+        </div>
+        <div class="options">
+            <button class="option selected" data-target="google"><i class="fab fa-google options-btn-icon"></i><span class="tooltip">Google</span></button>
+            <button class="option" data-target="youtube"><i class="fab fa-youtube options-btn-icon"></i><span class="tooltip">Youtube</span></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
